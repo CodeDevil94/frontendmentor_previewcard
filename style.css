@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+ 
+ :root {
+    --p-verydark-blue: hsl(244, 38%, 16%);
+    --p-violet: hsl(277, 64%, 61%);
+
+    --n-white: hsl(0, 0%, 100%);
+    --n-gray: hsl(242, 14%, 67%);
+ }
+
+
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+
+ }
+
+ .container {
+    display: grid;
+    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    border: solid 1.5px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--p-violet);
+ }
+
+ .grid {
+    width: 500px;
+    background-color: var(--p-verydark-blue);
+ }
+
+h2 {
+    font-size: 2rem;
+    padding: 60px;
+    color: var(--n-white);
+}
+span {
+    color: var(--p-violet);
+}
+
+
+ img {
+    display: block;
+    opacity: 0.6;
+ }
+
+ .contents{
+    font-size: 1rem;
+    padding-left: 60px;
+    color: var(--n-gray);
+ }
+
+ .icons {
+    text-transform: uppercase;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    padding-left: 60px;
+    padding-top: 100px;
+    padding-right: 40px;
+ }
+ .number {
+    font-weight: 600;
+    color: var(--n-white);
+    padding-bottom: 5px;
+ }
+
+ .words {
+    color: var(--n-gray);
+    font-size: 9px;
+ }
+
+ @media (max-width: 750px) {
+    .container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 400px;
+    }
+ .grid {
+    height: 520px;
+    /* max-width: 350px; */
+    text-align: center;
+ }
+
+ h2 {
+    font-size: 2rem;
+    padding-left: 20px;
+    max-width: 400px;
+
+ }
+.contents {
+    padding-left: 60px;
+    padding-top: 0px;
+    max-width: 280px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    max-width: 350px;
+}
+.mobile {
+    height: 295px;
+}
+
+.hellos {
+    padding-top: 10px;
+}
+ }
